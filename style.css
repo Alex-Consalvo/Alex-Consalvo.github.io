@@ -1,60 +1,118 @@
-body.home, html {
-	height: 100%;
+
+.home{
+  width:100%;
+  text-align: center;
 }
+ img{
 
-body.home {
-	display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-h1 {
-	font-weight:normal;
-	font-size:60px;
-	text-align: center;
-	width: 100%;
-}
-
-span.fn {
-	color:#FFBF00;
-
-}
-
-span.ln{
-	color:#2274A5;
+  width:100%;
 }
 a{
   text-decoration: none;
-  color:black;
+  color:#EFC9A2;
+}
+
+/*Header*/
+.main-header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    z-index: 1;
+    display: inline;
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.9;
+    /*Opacity end*/
+}
+#my-name{
+  text-align: center;
+  font-size: 40px;
+  z-index: 2;
+  font-family:times;
+}
+#my-name .fn{
+  color:white;
 }
 a:hover{
   text-decoration: underline;
-  }
-  p{
-    text-align: center;
-  }
-  img{
-    margin-right: auto;
-    margin-left: auto;
-  }
-img.fn{
-    margin-right: auto;
-    margin-left: auto;
+  color:#1B92B2;
 }
 
-body {
-  text-align: center;
+#my-name .ln{
+  color:yellow;
 }
-button{
-  background-color: #E83F6F;
-  border-radius: 15px;
-  box-shadow: none;
+/*Content*/
+.primary-content{
+  height:450px;
+  width:100%;
+  background-color:black; 
+}
+
+.block-one,
+.block-two,
+.block-three{
+  display: inline-block;
+  width:10%;
+  height: 10%;
+  padding-top: 0;
   color:white;
-  font-size: 20px;
-  margin-left: 490px;
-  margin-top: 20px;
-  width: 200px;
-  height: 45px
- 
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.block-three:hover{
+  background: white;
+  opacity: .85;
 
 }
+.block-two:hover{
+  background: white;
+  opacity:.85;
+}
+
+.block-one:hover{
+  background:white;
+  opacity: .85
+}
+
+.main-footer{
+  height:250px;
+  color:white;
+  background-color: #3F4442;
+}
+
+
+/* Button
+a.button{
+  display:block;
+  height:70px;
+  width:200px;
+  background:0,0;
+  border:1.5px solid #F8C206;
+  border-radius: 1.875em;
+  margin-right: none;
+  margin-left: 1600px;
+  margin-top: -101px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  text-align: center;
+  line-height: 70px;
+  z-index: 1;
+}
+*/
+
+  
+
+
+
+
+
+
